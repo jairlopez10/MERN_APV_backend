@@ -16,7 +16,7 @@ const emailolvidepassword = async (datos) => {
 
     //Enviar el email
     const info = await transporter.sendMail({
-        from: "APV - Administrador de Pacientes de Veterinaria",
+        from: '"APV - Administrador de Pacientes de Veterinaria" <apv@correo.com>',
         to: email,
         subject: 'Reestablece tu password en APV',
         text: 'Reestablece tu password en APV',
